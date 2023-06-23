@@ -69,7 +69,10 @@ function Header({ setTheme }: Props) {
           defaultValue={options[0]}
           options={options}
           styles={{
-            control: (baseStyles, state) => ({
+            control: (
+              baseStyles
+              // state
+            ) => ({
               ...baseStyles,
               width: "10rem",
               borderRadius: "8px",
