@@ -26,3 +26,8 @@ export const Button = styled.button`
     color: orangered;
   }
 `;
+
+export const HugeButton = styled(Button)`
+  transform: scale(1.5);
+  margin: 5rem auto 0;
+`;

@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import { STYLE_CONSTANTS } from "./styleContstants";
 
-const { spacings } = STYLE_CONSTANTS;
+const {
+  spacings: { md, sm },
+} = STYLE_CONSTANTS;
 
 export const StyledProjectCard = styled.article`
   margin: 0 auto;
   max-width: 40rem;
   border-radius: 8px;
   box-shadow: 0 0 1rem 0 currentColor;
-  padding: ${spacings.md};
+  padding: ${md};
 
   & h2 {
     text-align: center;
-    font-size: ${spacings.md};
-    margin-bottom: ${spacings.md};
+    font-size: ${md};
+    margin-bottom: ${md};
   }
 
   & .image-container {
@@ -38,13 +40,13 @@ export const StyledProjectCard = styled.article`
   }
 
   & p {
-    margin: ${spacings.sm} 0;
+    margin: ${sm} 0;
     font-size: 1.5rem;
   }
 
   & .buttons-container {
     display: flex;
-    gap: ${spacings.sm};
+    gap: ${sm};
     justify-content: space-evenly;
   }
 
@@ -55,6 +57,15 @@ export const StyledProjectCard = styled.article`
   @media (max-width: 700px) {
     & div {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: ${sm};
+    font-size: 1rem;
+
+    & p {
+      font-size: 1.25rem;
     }
   }
 `;

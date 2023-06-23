@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import useLanguages from "../hooks/useLanguages";
 import { Language } from "../interfaces/Language";
-import { Button } from "../styles/Button.styled";
+import { HugeButton } from "../styles/Button.styled";
 
 function PageNotFound() {
   const navigate = useNavigate();
@@ -11,9 +11,9 @@ function PageNotFound() {
   return (
     <>
       <h1>{textContent[language as Language].pageTitle.pageNotFound}</h1>
-      <Button onClick={() => navigate(-1)}>
+      <HugeButton onClick={() => navigate(-1)}>
         {textContent[language as Language].buttonText.back}
-      </Button>
+      </HugeButton>
     </>
   );
 }

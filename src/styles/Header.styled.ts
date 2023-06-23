@@ -11,6 +11,7 @@ export const StyledHeader = styled.header`
     darkMode ? primaryDark : primaryLight};
   padding: ${sm} ${lg};
   display: flex;
+  flex-wrap: wrap;
   gap: ${lg};
   align-items: center;
   justify-content: space-between;
@@ -18,6 +19,7 @@ export const StyledHeader = styled.header`
   & ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
   }
 
