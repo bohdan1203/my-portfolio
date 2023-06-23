@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { STYLE_CONSTANTS } from "./styleContstants";
 
-const { colors, spacings } = STYLE_CONSTANTS;
+const { spacings } = STYLE_CONSTANTS;
 
 export const StyledProjectCard = styled.article`
   margin: 0 auto;
