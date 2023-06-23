@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import reactIs from "react-is";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ["react-is"],
+  resolve: {
+    alias: {
+      "react-is": reactIs,
     },
   },
 });
