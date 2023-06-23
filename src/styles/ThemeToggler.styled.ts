@@ -5,12 +5,14 @@ const { spacings } = STYLE_CONSTANTS;
 
 export const StyledThemeToggler = styled.div`
   cursor: pointer;
-  background-color: green;
+  border: 2px solid;
   display: flex;
   align-items: center;
   gap: ${spacings.xs};
-  padding: ${spacings.xxs} ${spacings.xs};
+  padding: ${spacings.xxs};
   border-radius: 9999px;
+
+  height: 2rem;
   position: relative;
 
   & span {
@@ -19,12 +21,12 @@ export const StyledThemeToggler = styled.div`
   }
 
   & .mark {
-    background-color: red;
+    background-color: currentColor;
     border-radius: 9999px;
     position: absolute;
     transform: translateX(
       ${({ theme: { darkMode } }) =>
-        darkMode ? "0" : `calc(100% + ${spacings.xs})`}
+        darkMode ? `calc(100% + ${spacings.xs})` : "0"}
     );
   }
 `;

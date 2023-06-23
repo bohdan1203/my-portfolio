@@ -35,31 +35,35 @@ function Header({ setTheme }: Props) {
           <li>
             <NavigationLink
               to="/"
-              textContent={TEXT_CONTENT[language as Language].navBar.home}
+              textContent={TEXT_CONTENT[language as Language].pageTitle.home}
             />
           </li>
           <li>
             <NavigationLink
               to="/portfolio"
-              textContent={TEXT_CONTENT[language as Language].navBar.portfolio}
+              textContent={
+                TEXT_CONTENT[language as Language].pageTitle.portfolio
+              }
             />
           </li>
           <li>
             <NavigationLink
               to="/resume"
-              textContent={TEXT_CONTENT[language as Language].navBar.resume}
+              textContent={TEXT_CONTENT[language as Language].pageTitle.resume}
             />
           </li>
           <li>
             <NavigationLink
               to="/contacts"
-              textContent={TEXT_CONTENT[language as Language].navBar.contacts}
+              textContent={
+                TEXT_CONTENT[language as Language].pageTitle.contacts
+              }
             />
           </li>
           <li>
             <NavigationLink
               to="/about"
-              textContent={TEXT_CONTENT[language as Language].navBar.about}
+              textContent={TEXT_CONTENT[language as Language].pageTitle.about}
             />
           </li>
         </ul>
